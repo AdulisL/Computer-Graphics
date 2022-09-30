@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "externalConsole": false,
+      "cwd": "/Users/me/Code/CSE167/hw0-mac",
+      "program": "/Users/me/Code/CSE167/hw0-mac/build/Debug/outDebug",
+      "MIMode": "gdb"
+    }
+  ]
+}
