@@ -1,0 +1,74 @@
+#version 330 core
+// Inputs to the fragment shader are outputs
+// of the same name of the vertex shader
+in vec2 canvas_coord; // range [-1,1]x[-1,1]
+
+uniform vec2 center;
+uniform float zoom;
+uniform int maxiter;
+
+// Output the frag color
+out vec4 fragColor;
+
+// HW1: You can define customized functions here,
+// e.g. complex multiplications, helper functions
+// for colormap etc.
+
+int isInMandelbrotSet(vec2 z){
+   	int maximum = 100;
+	float zReal = z[0];
+	float zImag = z[1];
+
+	for (int i = 0; i < maximum; i++) {
+		float tmp_r = pow(zReal,float(2));
+		float tmp_i = pow(zImag,float(2));
+	
+		if (sqrt(tmp_r + tmp_i) > 2.0) return i;
+
+		// zImag = 2.0 * zReal * zImag + z[1];
+		// zReal = (tmp_r - tmp_i) + z[0];
+	}
+	return 0;
+}
+/**  [-1 1]
+*    [-1 1]
+*/
+vec2 cprod(const vec2 z1, const vec2 z2){
+    vec2 norm1 = normalize(z1);
+    vec2 norm2 = normalize(z2);
+    vec2 z = norm1 * norm1 + norm2;
+    return z;
+}
+
+void main (void){
+
+    vec2 c = center + zoom * canvas_coord;
+    // HW1: Your implementation goes here. Compute
+    // the value of the Mandelbrot fractal at
+    // complex number c.  Then map the value to
+    // some color.
+    float x_start = -1.0;
+    float y_start = -1.0;
+    float x_end = 1.0;
+    float y_end = 1.0;
+    const int width = 100;
+    const int height = 100;
+    float d_x = (x_end - x_start)/(width - 1);
+	float d_y = (y_end - y_start)/(height - 1);
+
+    for (int i = 0; i < height; i++){
+        for (int j = 0; j < width; j++ ){
+            float x = x_start + j * d_x;
+            float y = x_start + i * d_y;
+            // int z = isInMandelbrotSet(x, y);
+            vec2 z = cprod(vec2(0.0, 0.0), c);
+            if(isInMandelbrotSet(z) > 2)
+                fragColor = vec4(0.0,0.0,1.0,1.0f);
+            else
+                fragColor = vec4(0.5,0.5,0.5, 1.0f);
+        }
+    }
+
+    // HW1: Replace the following default color
+    // fragColor = vec4(0.5,0.5,0.5, 1.0f);
+}

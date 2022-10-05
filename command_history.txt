@@ -1,0 +1,760 @@
+    1  ls
+    2  ll
+    3  ls -a
+    4  ls /
+    5  sudo help
+    6  whoami
+    7  bash
+    8  ls
+    9  ls /
+   10  cd bin
+   11  cd ~/bin
+   12  printenv > /var/folders/g4/4gy5_gj16m90165zgmtfsx9h0000gn/T/tmp-3478rJO0AEa96DH3txt
+   13  python --version
+   14  bash
+   15  python3 --version
+   16  alias python=python3
+   17  python --version
+   18  sudo install jdk
+   19  brew --version
+   20  bash
+   21  sudo update
+   22  update
+   23  ls -al
+   24  ls -al
+   25  brew install python3
+   26  python --version
+   27  python3 --version
+   28  alias python=python3
+   29  python --version
+   30  ls
+   31  cd Java
+   32  ls
+   33  javac main.java
+   34  ls
+   35  java Test.class
+   36  java Test
+   37  ls
+   38  make clean
+   39  clean
+   40  make clean main
+   41  rm main
+   42  rm main.class & Test.class
+   43  rm main.class && Test.class
+   44  rm main.class Test.class
+   45  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   46  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/me/.zprofile
+   47  eval "$(/opt/homebrew/bin/brew shellenv)"
+   48  brew
+   49  code .
+   50  code ..
+   51  code
+   52  code .
+   53  brew install --cast temurin
+   54  brew install --cask temurin
+   55  brew java
+   56  brew tamurin
+   57  brew jdk
+   58  brew install node
+   59  node --version
+   60  npm --version
+   61  brew install gcc
+   62  brew install g++
+   63  gcc --version
+   64  g++ -=-version
+   65  g++ --version
+   66  code .
+   67  brew java --version
+   68  brew install java
+   69  java --version
+   70  pwd
+   71  ls
+   72  mkdr Code
+   73  ls
+   74  mkdir Code
+   75  ls
+   76  ls -la
+   77  nano .zsh_sessions
+   78  nano .config
+   79  nano .bash_sessions
+   80  nano .zprofile
+   81  code .zshrc
+   82  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   83  ls
+   84  ls -la
+   85  ls
+   86  ls -la
+   87  clear
+   88  git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+   89  ls
+   90  ls -la
+   91  clear
+   92  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+   93  ~/.zshrc
+   94  plugins=( [plugins...] zsh-syntax-highlighting)
+   95  code ~/.zshrc
+   96  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+   97  clear
+   98  source ~/.zshrc
+   99  ls -la
+  100  source ~/.zshrc
+  101  ls -la
+  102  ls /
+  103  clear
+  104  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+  105  source ~/.zshrc
+  106  ls /
+  107  ls -la
+  108  clear
+  109  ls -la
+  110  c
+  111  clear
+  112  l
+  113  clear
+  114  ls
+  115  source ~/.zshrc
+  116  brew install zsh-syntax-highlighting
+  117  clear
+  118  l
+  119  clear
+  120  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlightinh.zsh
+  121  brew install zsh-syntax-highlighting
+  122  source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  123  ll
+  124  ls -ls
+  125  la
+  126  cd .zsh
+  127  la
+  128  clear
+  129  source ~/.zshrc
+  130  git
+  131  clear
+  132  ll
+  133  ls -ls
+  134  ls /
+  135  ls
+  136  pwd
+  137  whoami
+  138  bash
+  139  sudo update
+  140  clear
+  141  sudo help
+  142  echo $PATH
+  143  cd C
+  144  ls
+  145  gcc main.c
+  146  ls
+  147  ./a.out
+  148  make clean main
+  149  rm a.out main main.dSYM
+  150  rm a.out main
+  151  ls
+  152  rm -r main.dSYM
+  153  python --version
+  154  python3 --version
+  155  pyhton /Python/main.py
+  156  pyhton ~/Python/main.py
+  157  pyhton Python/main.py
+  158  cd Python
+  159  pyhton main.py
+  160  cd ..
+  161  pyhton3 Python/main.py
+  162  pyhton3 ~/Python/main.py
+  163  py ~/Python/main.py
+  164  /usr/bin/python3 /Users/me/Code/Python/main.py
+  165  ls
+  166  cd Code
+  167  clear
+  168  ls
+  169  code
+  170  code .
+  171  clear
+  172  code .
+  173  ls
+  174  cd Code
+  175  code .
+  176  clear
+  177  ls
+  178  clear
+  179  ls
+  180  cd C
+  181  ls
+  182  rm -r build
+  183  clear
+  184  cd ..
+  185  rm -r build
+  186  ll
+  187  ls /
+  188  ls
+  189  clear
+  190  sudo curl https://getmic.ro | bash
+  191  ./micro ~/.zshrc
+  192  clear
+  193  lll
+  194  l
+  195  ./micro ~/.zshrc
+  196  clear
+  197  ./micro ~/.zshrc
+  198  sudo curl https://getmic.ro | bash
+  199  clear
+  200  ./micro ~/.zshrc
+  201  l
+  202  ll
+  203  ls /
+  204  clear
+  205  tr
+  206  clear
+  207  ls
+  208  cd C
+  209  ls
+  210  ./main
+  211  touch main.c
+  212  gcc main.c
+  213  ls
+  214  ./a.out
+  215  touch a.out
+  216  ./a.out
+  217  gcc main.c
+  218  ./a.out
+  219  ls
+  220  make clean main a.out
+  221  ls
+  222  rm a.out main
+  223  ls
+  224  clear
+  225  git status
+  226  clear
+  227  exit
+  228  sudo --version
+  229  sudo udate
+  230  sudo update
+  231  sudo apt update
+  232  clear
+  233  sudo upgrade
+  234  sudo apt update
+  235  clear
+  236  exit
+  237  /usr/bin/python3 -m pip install -U pylint
+  238  pip install --upgrade pip
+  239  pip --version
+  240  brew install pip
+  241  python3 --version
+  242  pp --version
+  243  python3 instal pip
+  244  python3 install pip
+  245  alias python=python3
+  246  python --version
+  247  python pip --version
+  248  sudo apt install pip
+  249  clear
+  250  python -m pip --version
+  251  clear
+  252  cd .
+  253  clear
+  254  cd ..
+  255  clear
+  256  /usr/bin/python3 -m pip install -U autopep8
+  257  clear
+  258  cd c
+  259  nano makefile
+  260  nano Makefile
+  261  ls
+  262  ll
+  263  clear
+  264  make
+  265  cd ..
+  266  cd Cpp
+  267  clear
+  268  vi Makefile
+  269  make
+  270  ls
+  271  ./output
+  272  make clean
+  273  clear
+  274  make
+  275  make clean
+  276  cd ..
+  277  cd c
+  278  clear
+  279  touch Makefile
+  280  make
+  281  touch Makefile
+  282  make
+  283  make clean
+  284  clear
+  285  make
+  286  clear
+  287  make
+  288  clear
+  289  make
+  290  gcc --version
+  291  make
+  292  touch Makefile
+  293  clear
+  294  make
+  295  ls
+  296  clear
+  297  gcc main.c
+  298  ls
+  299  ./a.out
+  300  clang main.c
+  301  ls
+  302  rm a.out
+  303  ls
+  304  gclean
+  305  clear
+  306  ls
+  307  clang main.c
+  308  ls
+  309  ./a.out
+  310  rm a.out
+  311  clear
+  312  ls
+  313  make
+  314  touch Makefile
+  315  make
+  316  touch Makefile
+  317  make
+  318  touch Makefile
+  319  make
+  320  touch Makefile
+  321  make
+  322  touch Makefile
+  323  make
+  324  touch Makefile
+  325  make
+  326  touch Makefile
+  327  make
+  328  rm Makefile
+  329  ls
+  330  make
+  331  clear
+  332  make
+  333  make clean
+  334  make
+  335  touch Makefile
+  336  make
+  337  clean
+  338  clear
+  339  gcc main.c
+  340  clang main.c
+  341  cd c
+  342  clear
+  343  make
+  344  ./output
+  345  make clean
+  346  make
+  347  clear
+  348  make
+  349  ls
+  350  ./a.out
+  351  make clean
+  352  rm a.out
+  353  make
+  354  ./output
+  355  clear
+  356  make clean
+  357  make
+  358  make clean
+  359  clear
+  360  make clean
+  361  clear
+  362  cd c
+  363  cd ~/.Cpp
+  364  cd ~/Code/Cpp
+  365  pwd
+  366  cd ~/C
+  367  cd ~/./Cpp
+  368  clear
+  369  make clean
+  370  code .
+  371  ls
+  372  cd Code
+  373  clear
+  374  mkdir Qualcomm_interview
+  375  cd Qualcomm_interview
+  376  code .
+  377  touch Makefile
+  378  touch main.cpp
+  379  ls
+  380  make
+  381  ls
+  382  touch Makefile
+  383  make
+  384  cd ..
+  385  clear
+  386  code .
+  387  cd Qualcomm_interview
+  388  make
+  389  ls
+  390  ./output
+  391  make clean
+  392  ls
+  393  exit
+  394  ls
+  395  make clean
+  396  ls
+  397  gcc main.c
+  398  ./a.out
+  399  gcc main.c
+  400  clear
+  401  gcc main.c
+  402  touch main.c
+  403  gcc main.c
+  404  ./a.out
+  405  clear
+  406  cd Qualcomm_interview
+  407  clear
+  408  make
+  409  make clean
+  410  clear
+  411  touch Makefile
+  412  make
+  413  ./main_c
+  414  make clean
+  415  cd Qualcomm_interview
+  416  make clean
+  417  clear
+  418  java --version
+  419  javac --version
+  420  pwd
+  421  ls
+  422  cd Code/Java
+  423  clear
+  424  ls
+  425  rm main.class
+  426  ls
+  427  javac main.java
+  428  ls
+  429  ./Test.class
+  430  java Test.class
+  431  ./out
+  432  cd ..
+  433  ls
+  434  clear
+  435  code .
+  436  brew install glm freeimage
+  437  touch Makefile
+  438  clear
+  439  make
+  440  ./HelloGl ./HelloSquare
+  441  2 3
+  442  ESC
+  443  make clean
+  444  glm --virsion
+  445  make clean
+  446  make
+  447  ./HelloSquare
+  448  clear
+  449  ls
+  450  ./HelloSquare
+  451  clear
+  452  ./HelloSquare
+  453  clear
+  454  make 
+  455  touch Makefile
+  456  make clean
+  457  clear
+  458  ls
+  459  cd Code
+  460  ls
+  461  cd CSE167
+  462  ls
+  463  cd hw0-mac
+  464  ls
+  465  clear
+  466  ls
+  467  code .
+  468  clear
+  469  make
+  470  clear
+  471  make
+  472  make clean
+  473  make
+  474  ./HelloSquare
+  475  o
+  476  Esc
+  477  clear
+  478  ls
+  479  make
+  480  clear
+  481  touch Makefile
+  482  make
+  483  code .
+  484  make clean
+  485  make
+  486  touch Makefile
+  487  make
+  488  cd Copy
+  489  make
+  490  ./HelloSquareCopy
+  491  clear
+  492  make clean
+  493  cd ..
+  494  make clean
+  495  touch Makefile
+  496  make clean
+  497  ls
+  498  cd Copy
+  499  make
+  500  ./HelloSquareCopy
+  501  make clean
+  502  cd ..
+  503  cd ../ ..
+  504  cd ../ ../
+  505  cd ../ ../Cpp
+  506  cd
+  507  cd ..
+  508  clear
+  509  cd ~/me
+  510  ls
+  511  cd me/Code
+  512  ls
+  513  cd Cpp
+  514  code .
+  515  clear
+  516  ls
+  517  make
+  518  make clean
+  519  make
+  520  ls
+  521  ./HelloSquareCopy
+  522  touch Makefile
+  523  ./HelloSquareCopy
+  524  make
+  525  ./HelloSquareCopy
+  526  make
+  527  ./HelloSquareCopy
+  528  make
+  529  ./HelloSquareCopy
+  530  clear
+  531  make
+  532  ./HelloSquareCopy
+  533  make
+  534  ./HelloSquareCopy
+  535  make
+  536  ./HelloSquareCopy
+  537  make
+  538  ./HelloSquareCopy
+  539  make
+  540  ./HelloSquareCopy
+  541  make
+  542  ./HelloSquareCopy
+  543  make
+  544  ./HelloSquareCopy
+  545  make
+  546  ./HelloSquareCopy
+  547  make
+  548  ./HelloSquareCopy
+  549  make
+  550  ./HelloSquareCopy
+  551  make
+  552  ./HelloSquareCopy
+  553  ls
+  554  make
+  555  ./HelloSquareCopy
+  556  make
+  557  ./HelloSquareCopy
+  558  make
+  559  ./HelloSquareCopy
+  560  make
+  561  ./HelloSquareCopy
+  562  make
+  563  ./HelloSquareCopy
+  564  make
+  565  ./HelloSquareCopy
+  566  make
+  567  ./HelloSquareCopy
+  568  make
+  569  ./HelloSquareCopy
+  570  make
+  571  ./HelloSquareCopy
+  572  make
+  573  ./HelloSquareCopy
+  574  make
+  575  ./HelloSquareCopy
+  576  make
+  577  ./HelloSquareCopy
+  578  make
+  579  ./HelloSquareCopy
+  580  make
+  581  ./HelloSquareCopy
+  582  make
+  583  ./HelloSquareCopy
+  584  make
+  585  ./HelloSquareCopy
+  586  make
+  587  ./HelloSquareCopy
+  588  make
+  589  ./HelloSquareCopy
+  590  make
+  591  ./HelloSquareCopy
+  592  make
+  593  ./HelloSquareCopy
+  594  make
+  595  ./HelloSquareCopy
+  596  make
+  597  ./HelloSquareCopy
+  598  make
+  599  ./HelloSquareCopy
+  600  make
+  601  ./HelloSquareCopy
+  602  make
+  603  ./HelloSquareCopy
+  604  make
+  605  ./HelloSquareCopy
+  606  make
+  607  ./HelloSquareCopy
+  608  make
+  609  ./HelloSquareCopy
+  610  make
+  611  ./HelloSquareCopy
+  612  make
+  613  ./HelloSquareCopy
+  614  make
+  615  ./HelloSquareCopy
+  616  make
+  617  ./HelloSquareCopy
+  618  make
+  619  ./HelloSquareCopy
+  620  make
+  621  ./HelloSquareCopy
+  622  make
+  623  ./HelloSquareCopy
+  624  make
+  625  ./HelloSquareCopy
+  626  make
+  627  ./HelloSquareCopy
+  628  make
+  629  ./HelloSquareCopy
+  630  make
+  631  ./HelloSquareCopy
+  632  make
+  633  ./HelloSquareCopy
+  634  make
+  635  ./HelloSquareCopy
+  636  make
+  637  ./HelloSquareCopy
+  638  make
+  639  ./HelloSquareCopy
+  640  make
+  641  ./HelloSquareCopy
+  642  pwd
+  643  ls
+  644  cd Copy
+  645  make
+  646  ./HelloSquareCopy
+  647  make
+  648  ./HelloSquareCopy
+  649  make
+  650  ./HelloSquareCopy
+  651  make
+  652  ./HelloSquareCopy
+  653  make
+  654  ./HelloSquareCopy
+  655  make
+  656  ./HelloSquareCopy
+  657  make
+  658  ./HelloSquareCopy
+  659  make
+  660  ./HelloSquareCopy
+  661  make
+  662  ./HelloSquareCopy
+  663  make
+  664  ./HelloSquareCopy
+  665  make
+  666  ./HelloSquareCopy
+  667  make
+  668  ./HelloSquareCopy
+  669  make
+  670  ./HelloSquareCopy
+  671  make
+  672  ./HelloSquareCopy
+  673  make
+  674  ./HelloSquareCopy
+  675  make
+  676  ./HelloSquareCopy
+  677  cd Copy
+  678  make
+  679  ./HelloSquareCopy
+  680  make
+  681  ./HelloSquareCopy
+  682  make
+  683  ./HelloSquareCopy
+  684  make
+  685  ./HelloSquareCopy
+  686  make
+  687  ./HelloSquareCopy
+  688  make
+  689  ./HelloSquareCopy
+  690  clear
+  691  make
+  692  ./HelloSquareCopy
+  693  cd ..
+  694  ls
+  695  cd Fall22
+  696  ls
+  697  cd cse110
+  698  code .
+  699  clear
+  700  code .
+  701  cd ..
+  702  ls 
+  703  cd cse167
+  704  ls
+  705  code .
+  706  git status
+  707  git intiate
+  708  git init
+  709  code .
+  710  ls
+  711  cd ../../
+  712  ls
+  713  cd Code
+  714  cd ~/me
+  715  clear
+  716  ls
+  717  cd Code
+  718  ls
+  719  cd Fall22/CSE110
+  720  code .
+  721  git add .
+  722  git -m "My first commit"
+  723  git commit -m "My first commit"
+  724  git status
+  725  git add README.md
+  726  git add HW1/README.md
+  727  git commit -m "Updated readme file"
+  728  git push
+  729  git status
+  730  git push
+  731  git push --set-upstream origin add-read-me
+  732  git add README.md
+  733  git commit -m "Added readme file"
+  734  git status
+  735  git push
+  736  cd ..
+  737  cd CSE167
+  738  git init
+  739  cd Fall22/CSE167
+  740  ls
+  741  cd ./Fall22/CSE167
+  742  cd ./Fall22
+  743  cd ..
+  744  clear
+  745  cd CSE167
+  746  code .
+  747  git add .
+  748  git status
+  749  git .gitignore
+  750  ls
+  751  git add .gitignore
+  752  git status
+  753  git commit -m "My first commit"
+  754  git status
+  755  cd ~./CSE110
+  756  cd ~/CSE110
+  757  cd ../CSE110
+  758  code .
+  759  clear
+  760  history
