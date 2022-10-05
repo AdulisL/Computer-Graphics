@@ -34,9 +34,14 @@ int isInMandelbrotSet(vec2 z){
 *    [-1 1]
 */
 vec2 cprod(const vec2 z1, const vec2 z2){
-    // (a + bi)(c-di)= a.c + a.d + bi.c + b.d(-1)
-    float real = (z1[0] * z2[0]) + z1[1]*z2[1]*(-1);
-    float imag = z1[0] * z2[1] + z1[1] * z2[0];
+    // (a + bi)(c+di)= a.c + a.d + bi.c + b.d(-1)
+    // real = (ac - bd). imag(ad + bc)i
+    // a = z1.x
+    // b = z1.y
+    // c = z2.x
+    // d = z2.y
+    float real = (z1.x * z2.x) - (z1.y * z2.y);
+    float imag = (z1.x * z2.y) + (z1.y * z2.x);
     vec2 z = vec2(real, imag);
     return z;
 }
@@ -48,28 +53,15 @@ void main (void){
     // the value of the Mandelbrot fractal at
     // complex number c.  Then map the value to
     // some color.
-    float x_start = -1.0;
-    float y_start = -1.0;
-    float x_end = 1.0;
-    float y_end = 1.0;
-    const int width = 100;
-    const int height = 100;
-    float d_x = (x_end - x_start)/(width - 1);
-	float d_y = (y_end - y_start)/(height - 1);
-
-    for (int i = 0; i < height; i++){
-        for (int j = 0; j < width; j++ ){
-            float x = x_start + j * d_x;
-            float y = x_start + i * d_y;
-            // int z = isInMandelbrotSet(x, y);
-            vec2 z = cprod(vec2(0.0, 0.0), c);
-            if(isInMandelbrotSet(z) > 2)
-                fragColor = vec4(0.0,0.0,1.0,1.0f);
-            else
-                fragColor = vec4(0.5,0.5,0.5, 1.0f);
-        }
+    vec2 z = vec2(0.0, 0.0);
+    int I = 0;
+    for (int i = 0; i < maxiter; i++){
+        z = cprod(z * z, c);
+        if(length(z) > 2) break;
+        I = i;
     }
-
+    float color = I;
     // HW1: Replace the following default color
     // fragColor = vec4(0.5,0.5,0.5, 1.0f);
+    fragColor = vec4(color,color,color, 1.0f);
 }
