@@ -34,9 +34,10 @@ int isInMandelbrotSet(vec2 z){
 *    [-1 1]
 */
 vec2 cprod(const vec2 z1, const vec2 z2){
-    vec2 norm1 = normalize(z1);
-    vec2 norm2 = normalize(z2);
-    vec2 z = norm1 * norm1 + norm2;
+    // (a + bi)(c-di)= a.c + a.d + bi.c + b.d(-1)
+    float real = (z1[0] * z2[0]) + z1[1]*z2[1]*(-1);
+    float imag = z1[0] * z2[1] + z1[1] * z2[0];
+    vec2 z = vec2(real, imag);
     return z;
 }
 
