@@ -9,7 +9,7 @@ out vec4 fragColor;
 
 void main (void){
     fragColor = vec4(vertexcolor, 1.0f);
-    if (length(vertexpos)<circleradius){
+    if (length(vertexpos) < circleradius){
         fragColor = vec4(circlecolor, 1.0f);
     }
 }
