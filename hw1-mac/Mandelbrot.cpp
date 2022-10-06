@@ -91,7 +91,7 @@ void saveScreenShot(void){
 void keyboard(unsigned char key, int x, int y){
     switch(key){
         case 27: // Escape to quit
-            system("make clean"); // cleans compiled
+            // system("make clean"); // cleans compiled
             exit(0);
             break;
         case 'h': // print help

@@ -56,12 +56,15 @@ void main (void){
     vec2 z = vec2(0.0, 0.0);
     int I = 0;
     for (int i = 0; i < maxiter; i++){
-        z = cprod(z * z, c);
-        if(length(z) > 2) break;
-        I = i;
+        z = cprod(z, z) + c;
+        if(length(z) > 2){
+            I = i;
+            break;
+        } 
     }
-    float color = I;
+    float color = float(float(I) / float(maxiter));
     // HW1: Replace the following default color
     // fragColor = vec4(0.5,0.5,0.5, 1.0f);
-    fragColor = vec4(color,color,color, 1.0f);
+    // for(int i = 0; i <= maxiter; i++)
+        fragColor = vec4(color*7,color*5,color*3, 1.0f);
 }
