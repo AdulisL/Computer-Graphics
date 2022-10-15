@@ -1,3 +1,7 @@
+/**
+*   Meron Asfaw, Fall-2022
+*   masfaw@ucsd.edu
+*/
 #version 330 core
 // Inputs to the fragment shader are outputs
 // of the same name of the vertex shader
@@ -13,26 +17,15 @@ out vec4 fragColor;
 // HW1: You can define customized functions here,
 // e.g. complex multiplications, helper functions
 // for colormap etc.
+#define RED             vec3(1.0, 0.0, 0.0)
+#define GREEN           vec3(0.0, 1.0, 0.0)
+#define BLUE            vec3(0.0, 0.0, 1.0)
+#define YELLOW          vec3(1.0, 1.0, 0.0)
 
-int isInMandelbrotSet(vec2 z){
-   	int maximum = 100;
-	float zReal = z[0];
-	float zImag = z[1];
-
-	for (int i = 0; i < maximum; i++) {
-		float tmp_r = pow(zReal,float(2));
-		float tmp_i = pow(zImag,float(2));
-	
-		if (sqrt(tmp_r + tmp_i) > 2.0) return i;
-
-		// zImag = 2.0 * zReal * zImag + z[1];
-		// zReal = (tmp_r - tmp_i) + z[0];
-	}
-	return 0;
+float coloring (float color){
+    return color;
 }
-/**  [-1 1]
-*    [-1 1]
-*/
+
 vec2 cprod(const vec2 z1, const vec2 z2){
     // (a + bi)(c+di)= a.c + a.d + bi.c + b.d(-1)
     // real = (ac - bd). imag(ad + bc)i
@@ -66,5 +59,7 @@ void main (void){
     // HW1: Replace the following default color
     // fragColor = vec4(0.5,0.5,0.5, 1.0f);
     // for(int i = 0; i <= maxiter; i++)
-        fragColor = vec4(color*7,color*5,color*3, 1.0f);
+    // fragColor = vec4(color*25,color*19,color*5, 1.0f);
+    fragColor = vec4(color*5,color*3,color*4, 1.0f);
+    
 }

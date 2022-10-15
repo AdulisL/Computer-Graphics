@@ -46,7 +46,7 @@ void printHelp(){
       press 'h' to print this message again.
       press Esc to quit.
       press 'o' to save a screenshot.
-      press the arrow keys to navigate.
+      press the arrow keys to nevigate.
       press 'a' and 'z' to zoom.
       press '+' and '-' to modify maxiter.
 )";
@@ -91,7 +91,6 @@ void saveScreenShot(void){
 void keyboard(unsigned char key, int x, int y){
     switch(key){
         case 27: // Escape to quit
-            // system("make clean"); // cleans compiled
             exit(0);
             break;
         case 'h': // print help
@@ -127,7 +126,6 @@ void keyboard(unsigned char key, int x, int y){
             break;
     }
 }
-
 void specialKey(int key, int x, int y){
     switch (key) {
         case GLUT_KEY_UP: // up
@@ -168,7 +166,7 @@ int main(int argc, char** argv)
     glutCreateWindow(title);
 #ifndef __APPLE__
     glewExperimental = GL_TRUE;
-    GLenum err = glewInit();
+    GLenum err = glewInit() ;
     if (GLEW_OK != err) {
         std::cerr << "Error: " << glewGetErrorString(err) << std::endl;
     }
