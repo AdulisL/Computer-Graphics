@@ -17,6 +17,14 @@ out vec4 fragColor;
 // HW1: You can define customized functions here,
 // e.g. complex multiplications, helper functions
 // for colormap etc.
+#define RED             vec3(1.0, 0.0, 0.0)
+#define GREEN           vec3(0.0, 1.0, 0.0)
+#define BLUE            vec3(0.0, 0.0, 1.0)
+#define YELLOW          vec3(1.0, 1.0, 0.0)
+
+float coloring (float color){
+    return color;
+}
 
 vec2 cprod(const vec2 z1, const vec2 z2){
     // (a + bi)(c+di)= a.c + a.d + bi.c + b.d(-1)
@@ -51,5 +59,7 @@ void main (void){
     // HW1: Replace the following default color
     // fragColor = vec4(0.5,0.5,0.5, 1.0f);
     // for(int i = 0; i <= maxiter; i++)
-    fragColor = vec4(color*3,color*12,color*48, 1.0f);
+    // fragColor = vec4(color*25,color*19,color*5, 1.0f);
+    fragColor = vec4(color*5,color*3,color*4, 1.0f);
+    
 }
