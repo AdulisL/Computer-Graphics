@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": true,
       "externalConsole": false,
-      "cwd": "/Users/me/Code/Fall22/CSE167/hw1-mac",
-      "program": "/Users/me/Code/Fall22/CSE167/hw1-mac/build/Debug/outDebug",
+      "cwd": "/Users/me/Code/Fall22/CSE167/hw2-mac",
+      "program": "/Users/me/Code/Fall22/CSE167/hw2-mac/build/Debug/outDebug",
       "MIMode": "gdb"
     }
   ]
