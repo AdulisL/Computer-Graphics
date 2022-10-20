@@ -138,6 +138,7 @@ void saveScreenShot(const char* filename = "test.png"){
 void keyboard(unsigned char key, int x, int y){
     switch(key){
         case 27: // Escape to quit
+            // system("make clean");  // clean any binaries
             exit(0);
             break;
         case 'h': // print help
