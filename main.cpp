@@ -8,7 +8,10 @@
 #endif
 // #include "Geometry.h"
 // #include "Square.h"
-
+using namespace std;
+// using namespace glm;
+unsigned int texture;
+// glm::glGenTextures(1, &texture);
 
 int main(int, char**) {
 

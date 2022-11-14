@@ -73,8 +73,7 @@ public:
         count = sizeof(indices)/sizeof(indices[0]);
         glBindVertexArray(0);
     }
-    
-    
+
 };
 
 #endif 

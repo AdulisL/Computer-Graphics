@@ -40,7 +40,7 @@ void Scene::draw(void){
     /**
      * TODO: (HW3 hint: you should do something here)
      */
-    
+    matrix_stack.push(cur_VM);  // pushing the current view model
     // Compute total number of connectivities in the graph; this would be an upper bound for
     // the stack size in the depth first search over the directed acyclic graph
     int total_number_of_edges = 0; 
@@ -62,16 +62,18 @@ void Scene::draw(void){
         /**
          * TODO: (HW3 hint: you should do something here)
          */
+        //Matrix_stack
+        cur_VM = matrix_stack.top();  matrix_stack.pop(); // changed 
         
         // draw all the models at the current node
         for ( size_t i = 0; i < cur -> models.size(); i++ ){
             // Prepare to draw the geometry. Assign the modelview and the material.
-            
             /**
              * TODO: (HW3 hint: you should do something here)
              */
-
-            shader -> modelview = cur_VM; // TODO: HW3: Without updating cur_VM, modelview would just be camera's view matrix.
+            // updating camera view
+            // TODO: HW3: Without updating cur_VM, modelview would just be camera's view matrix.
+            shader->modelview = cur_VM * cur->modeltransforms[i]; // Change
             shader -> material  = ( cur -> models[i] ) -> material;
             
             // The draw command
@@ -85,8 +87,9 @@ void Scene::draw(void){
             /**
              * TODO: (HW3 hint: you should do something here)
              */
+            matrix_stack.push(cur_VM * cur->childtransforms[i]); // changed
         }
-        
+
     } // End of DFS while loop.
     // HW3: Your code will only be above this line.
     
