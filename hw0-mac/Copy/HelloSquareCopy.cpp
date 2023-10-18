@@ -73,7 +73,7 @@ void initialize(void){
         -0.625f, 0.25f,   // pt7
         0.00f, 0.00f      // pt8
     };
-    
+    static GLfloat VertexBuffer[18];
     GLfloat colors[] = {
         1.0f, 0.0f, 0.0f, // pt0: red
         0.0f, 0.0f, 1.0f, // pt1: yellow
